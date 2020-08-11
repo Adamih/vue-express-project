@@ -29,5 +29,3 @@ To use the application, users are pre-configured on the server. These are the us
 | User2        | user2      | password |
 | User3        | user3      | password |
 | User4        | user4      | password |
-
-You can keep reading the README for the [server](./server/README.md) & [client](./client/README.md) if needed.
