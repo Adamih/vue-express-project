@@ -1,25 +1,33 @@
-# Lab 4
+# Vue & ExpressJs final project
 
-## För att komma igång
+This is our A-grade final project in my web-development course implemented in Vue and ExpressJs. It's a fully functional, simple and secure Queue system. The focus of this project is to implement modern basic features and security principles of modern web-development. Anything but a minimalistic visual presentation was outside the scope of this project.
 
-1. [Installera node 10.13](https://nodejs.org/en/) eller senare.
-2. Klona ned det här repot.
-3. Kör `npm install` inuti repo mappen.
-4. Kör `npm start` inuti repo mappen.
-5. Navigera till `localhost:8989` i din webbläsare.
+This project implements features like:
 
-Fortsätt sedan att läsa README filerna för [server](./server/README.md) & [client](./client/README.md).
+* 📣 Real-time updates using sockets
+* 🍪 Support HTTPS-certificates and secure cookies
+* 🚪 Gated API's and privileged users
+* 🔐 Encrypted passwords with [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
+* 🕗 Persistent sessions w/ timeouts
+* 🚀 Simple, well-structured codebase
 
-## General instructions
+## Instructions
 
-__Note:__ A prerequisite for the javascript labs is that you have the latest [`Node LTS`](https://nodejs.org/en/) installed on your machine.
+1. [Install node 10.13](https://nodejs.org/en/) or later.
+2. Clone this repository.
+3. Run `npm install` inside repository.
+4. Run `npm start` inside repository.
+5. Navigate to `localhost:8989` in your browser.
 
-In this and all following javascript labs it is required of you to follow these steps in your terminal, in order to get up and running:  
+To use the application, users are pre-configured on the server. These are the usernames and passwords available:
 
-1. [Clone down this repository on to your system.](https://help.github.com/en/articles/cloning-a-repository)
-2. [Navigate to the repository on your system, using the terminal.](https://lmgtfy.com/?q=how+to+navigate+using+terminal)
-3. Run this command `npm install` by typing it in the terminal and pressing the `Enter` key.
+| Display name | Login name | Password |
+|--------------|------------|----------|
+| Admin        | admin      | admin    |
+| User0        | user0      | password |
+| User1        | user1      | password |
+| User2        | user2      | password |
+| User3        | user3      | password |
+| User4        | user4      | password |
 
-Before you present a lab make sure that when you run `npm run lint` no error show up. If there are errors make sure you fix them before presenting your lab. These errors can quickly pile up so make sure you regularly run `npm run lint` and fix the errors straight away. This way you wont have to go through fixing hundreds of errors the day before the presentation.
-
-__Note:__ Most common errors can be automatically fixed by running `npm run lint:fix`
+You can keep reading the README for the [server](./server/README.md) & [client](./client/README.md) if needed.

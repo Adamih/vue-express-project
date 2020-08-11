@@ -100,10 +100,12 @@ exports.findUser = (name) => users[name];
 exports.initDB = async () => {
   // // TODO: Stop reseting tables.
   await this.resetUsers(); await this.resetQueue();
-  this.registerUser('gab', 'Gabbe', 'pass', true);
-  this.registerUser('jesp', 'Jesper', 'password', true);
-  this.registerUser('seb', 'Sebbe', 'wow', false);
-  this.registerUser('adam', 'Adam', 'hi', false);
+  this.registerUser('admin', 'Admin', 'admin', true);
+  this.registerUser('user0', 'User0', 'password', false);
+  this.registerUser('user1', 'User1', 'password', false);
+  this.registerUser('user2', 'User2', 'password', false);
+  this.registerUser('user3', 'User3', 'password', false);
+  this.registerUser('user4', 'User4', 'password', false);
 };
 
 exports.resetQueue = () => QueueTable.sync({ force: true });
