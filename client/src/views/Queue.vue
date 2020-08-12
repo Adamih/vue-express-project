@@ -105,7 +105,7 @@ export default {
     });
 
     this.socket.on('deleteFromQueue', (data) => {
-      this.queue = this.queue.filter(e => e.userId !== data.userId);
+      this.queue = this.queue.filter((e) => e.userId !== data.userId);
       if (data.userId === this.$store.state.userId) {
         this.$store.commit('setIsInQueue', false);
       }
